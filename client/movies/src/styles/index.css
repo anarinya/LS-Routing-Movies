@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+  background-color: whitesmoke;
+}
+
+.container {
+  padding: 10px 20px;
+}
+
+
+.Nav {
+  height: 70px;
+  background-color: #000;
+  color: #fff;
+  line-height: 70px;
+  padding: 0px 20px;
+}
+
+.Nav .brand {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgray;
+}
+
+.Breadcrumbs {
+  background-color: darkgray;
+  font-size: 0.9em;
+}
+
+.Breadcrumbs a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.MovieList ul{
+  list-style: none;
+  padding-left: 0;
+  line-height: 2em;
+  color: #000;
+}
+
+.MovieList li {
+  padding: 20px;
+  border-bottom: 0.1em solid lightgray;
+  min-width: 475px;
+}
+
+.MovieList ul a {
+  color: #000;
+  text-decoration: none;
+}
+
+.MovieList ul li:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+.MovieList .movie-metascore {
+  float: right;
+}
+.MovieList .directory-heading {
+  height: 50px;
+  line-height: 50px;
+}
+
+.MovieList .directory-heading h3 {
+  margin: 0;
+  display: inline-block;
+}
+
+.MovieList .directory-menu {
+  display: inline-block;
+  float: right;
+}
+
+.MovieList .directory-menu button {
+
+}
+
+.MovieDetails ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.5em;
+}
+
