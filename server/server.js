@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const CORS = require('cors');
+const uuid = require('node-uuid');
 
 const app = express();
 
@@ -41,7 +42,10 @@ app.get('/movies/:id', (req, res) => {
 });
 
 app.post('/new-movie', (req, res) => {
-	if (req.body.id !== undefined) movies.push(req.body);
+	if (req.body.title !== undefined) {
+		req.body.id = uuid.v4();
+		movies.push(req.body);
+	}
 	res.send(movies);
 });
 
