@@ -40,10 +40,7 @@ class MovieList extends Component {
         <Breadcrumbs />
         <Body>
           <div className="directory-heading">
-            <h3>Movie Directory</h3>
-            <div className="directory-menu">
-              <button className="btn btn-new">Add New Movie</button>
-            </div>
+            <h2>Movie Directory</h2>
           </div>
           { this.renderMovies() }
         </Body>
@@ -52,5 +49,5 @@ class MovieList extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({ movies: state.movies });
+const mapStateToProps = ({ movies }) => ({ movies });
 export default connect(mapStateToProps, { getMovies })(MovieList);

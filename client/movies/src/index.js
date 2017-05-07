@@ -7,7 +7,7 @@ import ReduxPromise from 'redux-promise';
 
 import reducers from './reducers';
 
-import { MovieList, MovieDetails } from './containers';
+import { MovieList, MovieDetails, AddMovie } from './containers';
 import { Nav, Footer } from './components';
 import './styles/index.css';
 
@@ -20,6 +20,7 @@ ReactDOM.render(
         <Nav />
           <Switch>
             <Route path="/movies/:id" component={MovieDetails} />
+            <Route path="/new-movie" component={AddMovie} />
             <Route path="/" component={MovieList} />
           </Switch>
         <Footer />

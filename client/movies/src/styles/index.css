@@ -11,6 +11,26 @@ body {
   background-color: whitesmoke;
 }
 
+button {
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+button:hover {
+  padding: 10px 20px;
+  background-color: #333;
+
+  color: #fff;
+}
+
+.Body {
+  padding-bottom: 100px;
+}
+
 .container {
   padding: 10px 20px;
 }
@@ -25,9 +45,32 @@ body {
 }
 
 .Nav .brand {
-  font-size: 1.2em;
+  float: left;
+  font-size: 1.8em;
   text-decoration: none;
   color: #fff;
+}
+
+.Nav .menu {
+  float: left;
+  display: inline-block;
+  height: 70px;
+  padding: 0;
+  margin: 0 0 0 100px;
+}
+
+.Nav .menu a {
+  color: #fff;
+}
+
+.Nav .menu li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.Nav .menu li:hover {
+  background-color: whitesmoke;
+  color: #000;
 }
 
 .Footer {
@@ -100,3 +143,23 @@ body {
   line-height: 1.5em;
 }
 
+.AddMovie .form-field {
+  margin: 20px 0 30px;
+}
+
+.AddMovie .form-label {
+  margin-bottom: 10px;
+}
+
+.AddMovie .form-input {
+  border: 1px solid lightgray;
+  box-shadow: none;
+  width: 200px;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.AddMovie .form-error {
+  color: red;
+  padding-top: 5px;
+}
